@@ -42,8 +42,8 @@ export default function ProductDetailPage() {
       ],
       images: ["/MS Squre plate.jpg"],
       contactInfo: {
-        name: "Faiyaz Taufique Khan",
-        phone: "+91-9821570170",
+        name: "Hamza Faiyaz Khan",
+        phone: "+91-7738786141",
         email: "regalprofile01@gmail.com",
       },
     },
@@ -75,8 +75,8 @@ export default function ProductDetailPage() {
       ],
       images: ["/MS base plate.jpg", "/MS base plate 1.jpg", "/MS base plate 2.jpg"],
       contactInfo: {
-        name: "Faiyaz Taufique Khan",
-        phone: "+91-9821570170",
+        name: "Hamza Faiyaz Khan",
+        phone: "+91-7738786141",
         email: "regalprofile01@gmail.com",
       },
     },
@@ -110,7 +110,7 @@ export default function ProductDetailPage() {
       contactInfo: {
         name: "Hamza Faiyaz Khan",
         phone: "+91-7738786141",
-        email: "sales@regalprofile.com",
+        email: "regalprofile01@gmail.com",
       },
     },
     4: {
@@ -143,7 +143,7 @@ export default function ProductDetailPage() {
       contactInfo: {
         name: "Hamza Faiyaz Khan",
         phone: "+91-7738786141",
-        email: "sales@regalprofile.com",
+        email: "regalprofile01@gmail.com",
       },
     },
     5: {
@@ -174,8 +174,8 @@ export default function ProductDetailPage() {
       ],
       images: ["/MS plate.jpg"],
       contactInfo: {
-        name: "Faiyaz Taufique Khan",
-        phone: "+91-9821570170",
+        name: "Hamza Faiyaz Khan",
+        phone: "+91-7738786141",
         email: "regalprofile01@gmail.com",
       },
     },
@@ -217,8 +217,8 @@ export default function ProductDetailPage() {
         "/MS template cutting.jpg",
       ],
       contactInfo: {
-        name: "Faiyaz Taufique Khan",
-        phone: "+91-9821570170",
+        name: "Hamza Faiyaz Khan",
+        phone: "+91-7738786141",
         email: "regalprofile01@gmail.com",
       },
     },
@@ -250,8 +250,8 @@ export default function ProductDetailPage() {
       ],
       images: ["/MS ring.jpg"],
       contactInfo: {
-        name: "Faiyaz Taufique Khan",
-        phone: "+91-9821570170",
+        name: "Hamza Faiyaz Khan",
+        phone: "+91-7738786141",
         email: "regalprofile01@gmail.com",
       },
     },
@@ -283,8 +283,8 @@ export default function ProductDetailPage() {
       ],
       images: ["/MS slip on flang.jpg", "/MS slip on flang 2.jpg"],
       contactInfo: {
-        name: "Faiyaz Taufique Khan",
-        phone: "+91-9821570170",
+        name: "Hamza Faiyaz Khan",
+        phone: "+91-7738786141",
         email: "regalprofile01@gmail.com",
       },
     },
@@ -318,7 +318,7 @@ export default function ProductDetailPage() {
       contactInfo: {
         name: "Hamza Faiyaz Khan",
         phone: "+91-7738786141",
-        email: "sales@regalprofile.com",
+        email: "regalprofile01@gmail.com",
       },
     },
     10: {
@@ -349,8 +349,8 @@ export default function ProductDetailPage() {
       ],
       images: ["/MS foundation plate.jpg"],
       contactInfo: {
-        name: "Faiyaz Taufique Khan",
-        phone: "+91-9821570170",
+        name: "Hamza Faiyaz Khan",
+        phone: "+91-7738786141",
         email: "regalprofile01@gmail.com",
       },
     },
@@ -382,8 +382,8 @@ export default function ProductDetailPage() {
       ],
       images: ["/Loss head jsw template.jpg", "/Loss head jsw template 2.jpg"],
       contactInfo: {
-        name: "Faiyaz Taufique Khan",
-        phone: "+91-9821570170",
+        name: "Hamza Faiyaz Khan",
+        phone: "+91-7738786141",
         email: "regalprofile01@gmail.com",
       },
     },
@@ -417,7 +417,7 @@ export default function ProductDetailPage() {
       contactInfo: {
         name: "Hamza Faiyaz Khan",
         phone: "+91-7738786141",
-        email: "sales@regalprofile.com",
+        email: "regalprofile01@gmail.com",
       },
     },
   }
@@ -555,7 +555,7 @@ export default function ProductDetailPage() {
                   </a>
                   <a
                     href={`mailto:${product.contactInfo.email}`}
-                    className="text-accent hover:underline text-sm font-medium block"
+                    className="text-accent hover:underline text-sm font-medium block break-all"
                   >
                     {product.contactInfo.email}
                   </a>

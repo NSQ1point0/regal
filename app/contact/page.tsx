@@ -20,24 +20,16 @@ export default function ContactPage() {
 
   const contactInfo = {
     office: {
-      address: "10/83, Lakdi Bunder, Darukhana, Reay Road, Mumbai - 400010, Maharashtra, India",
-      phone: ["+91-22-23755778", "+91-22-23758333"],
-      mobile: "+91-9821132101",
-      email: ["regalprofile@gmail.com", "sales@regalprofile.com"],
+      address: "177/10,178/10 GURUKRUPA HUTMENTS RETI BUNDER ROAD DARUKHANA MAZGAON MUMBAI-400010",
+      phone: ["+91-7738786141"],
+      mobile: "+91-7738786141",
+      email: "regalprofile01@gmail.com",
     },
-    contacts: [
-      {
-        name: "Faiyaz Taufique Khan",
-        title: "Sales & Operations",
-        phone: ["+91-9821570170", "+91-7738786141"],
-        email: "Regalprofile01@gmail.com",
-      },
-      {
-        name: "Hamza Faiyaz Khan",
-        title: "Operations Manager",
-        phone: ["+91-7738786141"],
-      },
-    ],
+    contact: {
+      name: "Hamza Faiyaz Khan",
+      phone: "+91-7738786141",
+      email: "regalprofile01@gmail.com",
+    },
     website: "www.regalprofile.com",
     gst: "27AAPPK1319M1ZD",
     hours: {
@@ -95,17 +87,9 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-3">Phone</h3>
                   <div className="space-y-2">
-                    {contactInfo.office.phone.map((phone, index) => (
-                      <a key={index} href={`tel:${phone}`} className="text-accent hover:underline text-sm block">
-                        {phone}
-                      </a>
-                    ))}
-                    <p className="text-xs text-muted-foreground mt-3 pt-3 border-t border-border">
-                      Mobile:{" "}
-                      <a href={`tel:${contactInfo.office.mobile}`} className="text-accent hover:underline">
-                        {contactInfo.office.mobile}
-                      </a>
-                    </p>
+                    <a href={`tel:${contactInfo.office.mobile}`} className="text-accent hover:underline text-sm block">
+                      {contactInfo.office.mobile}
+                    </a>
                   </div>
                 </div>
               </div>
@@ -117,22 +101,19 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-3">Email</h3>
                   <div className="space-y-2">
-                    {contactInfo.office.email.map((email, index) => (
-                      <a
-                        key={index}
-                        href={`mailto:${email}`}
-                        className="text-accent hover:underline text-sm block break-all"
-                      >
-                        {email}
-                      </a>
-                    ))}
+                    <a
+                      href={`mailto:${contactInfo.office.email}`}
+                      className="text-accent hover:underline text-sm block break-all"
+                    >
+                      {contactInfo.office.email}
+                    </a>
                   </div>
                 </div>
               </div>
             </Card>
           </div>
 
-          {/* Contact Persons & Business Hours */}
+          {/* Contact Person & Business Hours */}
           <div className="grid md:grid-cols-3 gap-8 mb-20">
             {/* Business Hours */}
             <Card className="p-8 bg-primary/5 border-primary/20">
@@ -156,28 +137,21 @@ export default function ContactPage() {
               </div>
             </Card>
 
-            {/* Contact Persons */}
-            {contactInfo.contacts.map((contact, index) => (
-              <Card key={index} className="p-8 bg-card hover:shadow-lg transition-shadow duration-300">
-                <h3 className="text-lg font-bold text-foreground mb-2 flex items-center gap-2">
-                  <User className="w-5 h-5 text-accent" />
-                  {contact.name}
-                </h3>
-                <p className="text-sm text-accent mb-4 font-semibold">{contact.title}</p>
-                <div className="space-y-2">
-                  {contact.phone.map((phone, i) => (
-                    <a key={i} href={`tel:${phone}`} className="text-accent hover:underline text-sm block">
-                      {phone}
-                    </a>
-                  ))}
-                  {contact.email && (
-                    <a href={`mailto:${contact.email}`} className="text-accent hover:underline text-sm block">
-                      {contact.email}
-                    </a>
-                  )}
-                </div>
-              </Card>
-            ))}
+            {/* Contact Person */}
+            <Card className="p-8 bg-card hover:shadow-lg transition-shadow duration-300">
+              <h3 className="text-lg font-bold text-foreground mb-2 flex items-center gap-2">
+                <User className="w-5 h-5 text-accent" />
+                {contactInfo.contact.name}
+              </h3>
+              <div className="space-y-2">
+                <a href={`tel:${contactInfo.contact.phone}`} className="text-accent hover:underline text-sm block">
+                  {contactInfo.contact.phone}
+                </a>
+                <a href={`mailto:${contactInfo.contact.email}`} className="text-accent hover:underline text-sm block break-all">
+                  {contactInfo.contact.email}
+                </a>
+              </div>
+            </Card>
 
             {/* Business Details */}
             <Card className="p-8 bg-muted/30">
@@ -303,7 +277,7 @@ export default function ContactPage() {
                 Call Us Now
               </Button>
             </a>
-            <a href={`mailto:${contactInfo.office.email[0]}`}>
+            <a href={`mailto:${contactInfo.office.email}`}>
               <Button variant="outline" size="lg">
                 Send Email
               </Button>

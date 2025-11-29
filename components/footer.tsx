@@ -15,9 +15,9 @@ export default function Footer() {
     ],
     services: ["Profile Cutting", "Lathe Services", "Drilling & Milling", "Custom Manufacturing"],
     contact: {
-      address: "10/83, Lakdi Bunder, Darukhana, Reay Road, Mumbai - 400010",
-      phone: "+91-9821132101",
-      email: "regalprofile@gmail.com",
+      address: "177/10,178/10 GURUKRUPA HUTMENTS RETI BUNDER ROAD DARUKHANA MAZGAON MUMBAI-400010",
+      phone: "+91-7738786141",
+      email: "regalprofile01@gmail.com",
     },
   }
 

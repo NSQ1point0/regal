@@ -30,16 +30,17 @@ export default function AboutPage() {
   ]
 
   const contactInfo = {
-    address: "10/83, Lakdi Bunder, Darukhana, Reay Road, Mumbai - 400010",
-    phone: ["+91-22-23755778", "23758333"],
-    mobile: "+91-9821132101",
-    email: ["regalprofile@gmail.com", "sales@regalprofile.com"],
+    address: "177/10,178/10 GURUKRUPA HUTMENTS RETI BUNDER ROAD DARUKHANA MAZGAON MUMBAI-400010",
+    phone: ["+91-7738786141"],
+    mobile: "+91-7738786141",
+    email: "regalprofile01@gmail.com",
     website: "www.regalprofile.com",
     gst: "27AAPPK1319M1ZD",
-    contacts: [
-      { name: "Faiyaz Taufique Khan", phone: "9821570170 / 7738786141", email: "Regalprofile01@gmail.com" },
-      { name: "Hamza Faiyaz Khan", phone: "7738786141" },
-    ],
+    contact: {
+      name: "Hamza Faiyaz Khan",
+      phone: "+91-7738786141",
+      email: "regalprofile01@gmail.com",
+    },
   }
 
   return (
@@ -214,52 +215,37 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground mb-1">Phone</p>
-                  <div className="space-y-1">
-                    {contactInfo.phone.map((p, i) => (
-                      <a key={i} href={`tel:${p}`} className="text-accent hover:underline">
-                        {p}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground mb-1">Mobile</p>
                   <a href={`tel:${contactInfo.mobile}`} className="text-accent hover:underline">
                     {contactInfo.mobile}
                   </a>
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground mb-1">Email</p>
-                  <div className="space-y-1">
-                    {contactInfo.email.map((e, i) => (
-                      <a key={i} href={`mailto:${e}`} className="text-accent hover:underline block">
-                        {e}
-                      </a>
-                    ))}
-                  </div>
+                  <a href={`mailto:${contactInfo.email}`} className="text-accent hover:underline block">
+                    {contactInfo.email}
+                  </a>
                 </div>
               </div>
             </Card>
 
             <Card className="p-8 bg-card">
-              <h3 className="text-xl font-bold mb-6 text-primary">Contact Persons</h3>
+              <h3 className="text-xl font-bold mb-6 text-primary">Contact Person</h3>
               <div className="space-y-6">
-                {contactInfo.contacts.map((contact, index) => (
-                  <div key={index} className="pb-6 border-b border-border last:border-0 last:pb-0">
-                    <p className="font-bold text-foreground mb-2">{contact.name}</p>
-                    <p className="text-sm text-muted-foreground">
-                      <strong>Phone:</strong> {contact.phone}
-                    </p>
-                    {contact.email && (
-                      <p className="text-sm text-muted-foreground">
-                        <strong>Email:</strong>{" "}
-                        <a href={`mailto:${contact.email}`} className="text-accent hover:underline">
-                          {contact.email}
-                        </a>
-                      </p>
-                    )}
-                  </div>
-                ))}
+                <div>
+                  <p className="font-bold text-foreground mb-2">{contactInfo.contact.name}</p>
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Phone:</strong>{" "}
+                    <a href={`tel:${contactInfo.contact.phone}`} className="text-accent hover:underline">
+                      {contactInfo.contact.phone}
+                    </a>
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Email:</strong>{" "}
+                    <a href={`mailto:${contactInfo.contact.email}`} className="text-accent hover:underline">
+                      {contactInfo.contact.email}
+                    </a>
+                  </p>
+                </div>
               </div>
             </Card>
           </div>
