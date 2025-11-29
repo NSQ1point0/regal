@@ -1,7 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
@@ -27,7 +26,6 @@ export default function RootLayout({
         <Navigation />
         <div className="flex-1">{children}</div>
         <Footer />
-        <Analytics />
       </body>
     </html>
   )
