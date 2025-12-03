@@ -9,14 +9,20 @@ export default function Footer() {
   const footerLinks = {
     company: [
       { label: "Home", href: "/" },
-      { label: "About Us", href: "/about" },
-      { label: "Products", href: "/products" },
+      { label: "Services", href: "/services" },
+      { label: "Rates", href: "/rates" },
       { label: "Contact", href: "/contact" },
     ],
-    services: ["Profile Cutting", "Lathe Services", "Drilling & Milling", "Custom Manufacturing"],
+    services: [
+      "MS Circle Cutting",
+      "MS Square Cutting",
+      "Scrap Cutting & Processing",
+      "Custom Industrial Cutting",
+    ],
     contact: {
-      address: "177/10,178/10 GURUKRUPA HUTMENTS RETI BUNDER ROAD DARUKHANA MAZGAON MUMBAI-400010",
-      phone: "+91-7738786141",
+      address:
+        "177/10, 178/10, Gurukrupa Hutments, Reti Bunder Road, Darukhana, Mazgaon, Mumbai – 400010, Maharashtra, India.",
+      phone: "7738786141",
       email: "regalprofile01@gmail.com",
     },
   }
@@ -27,9 +33,10 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">REGAL PROFILE</h3>
+            <h3 className="text-2xl font-bold mb-4">Regal Profile</h3>
             <p className="text-primary-foreground/80 text-sm mb-4">
-              30 years of excellence in industrial manufacturing and precision services.
+              MS circle cutting, MS square cutting, steel cutting, scrap processing, and wholesale MS supply in
+              Darukhana, Mazgaon, Mumbai.
             </p>
             <div className="flex gap-4">
               <a href="#" className="hover:text-accent transition-colors">
@@ -108,7 +115,9 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-primary-foreground/60 text-sm">&copy; {currentYear} REGAL PROFILE. All rights reserved.</p>
+          <p className="text-primary-foreground/60 text-sm">
+            Regal Profile © All Rights Reserved • MS Circle Cutting • MS Square Cutting • Darukhana, Mumbai
+          </p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <Link href="#" className="text-primary-foreground/60 hover:text-accent text-sm transition-colors">
               Privacy Policy

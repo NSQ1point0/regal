@@ -20,9 +20,10 @@ export default function ContactPage() {
 
   const contactInfo = {
     office: {
-      address: "177/10,178/10 GURUKRUPA HUTMENTS RETI BUNDER ROAD DARUKHANA MAZGAON MUMBAI-400010",
-      phone: ["+91-7738786141"],
-      mobile: "+91-7738786141",
+      address:
+        "177/10, 178/10, Gurukrupa Hutments, Reti Bunder Road, Darukhana, Mazgaon, Mumbai – 400010, Maharashtra, India.",
+      phone: ["7738786141"],
+      mobile: "7738786141",
       email: "regalprofile01@gmail.com",
     },
     contact: {
@@ -269,13 +270,12 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Quick Contact Options</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            For urgent matters, feel free to reach out directly via phone or visit our office during business hours.
+            For urgent MS circle cutting, MS square cutting, or scrap processing requirements, reach out directly via
+            phone or visit our Darukhana, Mazgaon, Mumbai location.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={`tel:${contactInfo.office.mobile}`}>
-              <Button variant="default" size="lg">
-                Call Us Now
-              </Button>
+              <Button variant="default" size="lg">Call Now</Button>
             </a>
             <a href={`mailto:${contactInfo.office.email}`}>
               <Button variant="outline" size="lg">

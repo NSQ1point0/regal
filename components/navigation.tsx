@@ -9,8 +9,8 @@ export default function Navigation() {
 
   const navItems = [
     { label: "Home", href: "/" },
-    { label: "About Us", href: "/about" },
-    { label: "Products", href: "/products" },
+    { label: "Services", href: "/services" },
+    { label: "Rates", href: "/rates" },
     { label: "Contact", href: "/contact" },
   ]
 
@@ -20,7 +20,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="font-bold text-xl md:text-2xl tracking-wider">
-            REGAL PROFILE
+            Regal Profile
           </Link>
 
           {/* Desktop Menu */}
