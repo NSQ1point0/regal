@@ -88,7 +88,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-3">Phone</h3>
                   <div className="space-y-2">
-                    <a href={`tel:${contactInfo.office.mobile}`} className="text-accent hover:underline text-sm block">
+                    <a href={`tel:${contactInfo.office.mobile}`} className="text-amber-500 hover:underline text-lg block">
                       {contactInfo.office.mobile}
                     </a>
                   </div>
@@ -104,7 +104,7 @@ export default function ContactPage() {
                   <div className="space-y-2">
                     <a
                       href={`mailto:${contactInfo.office.email}`}
-                      className="text-accent hover:underline text-sm block break-all"
+                      className="text-amber-500 hover:underline text-lg block break-all"
                     >
                       {contactInfo.office.email}
                     </a>
@@ -145,10 +145,10 @@ export default function ContactPage() {
                 {contactInfo.contact.name}
               </h3>
               <div className="space-y-2">
-                <a href={`tel:${contactInfo.contact.phone}`} className="text-accent hover:underline text-sm block">
+                <a href={`tel:${contactInfo.contact.phone}`} className="text-amber-500 hover:underline text-lg block">
                   {contactInfo.contact.phone}
                 </a>
-                <a href={`mailto:${contactInfo.contact.email}`} className="text-accent hover:underline text-sm block break-all">
+                <a href={`mailto:${contactInfo.contact.email}`} className="text-amber-500 hover:underline text-lg block break-all">
                   {contactInfo.contact.email}
                 </a>
               </div>
@@ -164,7 +164,7 @@ export default function ContactPage() {
                     href={`https://${contactInfo.website}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-accent hover:underline font-medium"
+                    className="text-amber-500 hover:underline text-lg font-medium"
                   >
                     {contactInfo.website}
                   </a>
